@@ -1,18 +1,18 @@
-![GitHub watchers](https://img.shields.io/github/watchers/ny-daystar/gudenaa)
-![GitHub forks](https://img.shields.io/github/forks/ny-daystar/gudenaa)
-![GitHub Repo stars](https://img.shields.io/github/stars/ny-daystar/gudenaa)
-![GitHub repo size](https://img.shields.io/github/repo-size/ny-daystar/gudenaa)
-![GitHub language count](https://img.shields.io/github/languages/count/ny-daystar/gudenaa)
-![GitHub top language](https://img.shields.io/github/languages/top/ny-daystar/gudenaa) <a href="https://codeclimate.com/github/ny-daystar/gudenaa/maintainability"><img src="https://api.codeclimate.com/v1/badges/715c6f3ffb08de5ca621/maintainability" /></a>  
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/ny-daystar/gudenaa/main)
-![GitHub issues](https://img.shields.io/github/issues/ny-daystar/gudenaa)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/ny-daystar/gudenaa)
-![GitHub](https://img.shields.io/github/license/ny-daystar/gudenaa)
+![GitHub watchers](https://img.shields.io/github/watchers/ny-daystar/aristeros)
+![GitHub forks](https://img.shields.io/github/forks/ny-daystar/aristeros)
+![GitHub Repo stars](https://img.shields.io/github/stars/ny-daystar/aristeros)
+![GitHub repo size](https://img.shields.io/github/repo-size/ny-daystar/aristeros)
+![GitHub language count](https://img.shields.io/github/languages/count/ny-daystar/aristeros)
+![GitHub top language](https://img.shields.io/github/languages/top/ny-daystar/aristeros) <a href="https://codeclimate.com/github/ny-daystar/aristeros/maintainability"><img src="https://api.codeclimate.com/v1/badges/715c6f3ffb08de5ca621/maintainability" /></a>  
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/ny-daystar/aristeros/main)
+![GitHub issues](https://img.shields.io/github/issues/ny-daystar/aristeros)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/ny-daystar/aristeros)
+![GitHub](https://img.shields.io/github/license/ny-daystar/aristeros)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-blue.svg?style=circular)](#contributors)
 
 ![Javascript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript&color=a5a5a5&logoColor=e5e5e5)
 
-# Gudenaa
+# Aristeros
 
 TODO a revoir
 Application developed in typescript (API) And Frontend (React)
@@ -44,7 +44,7 @@ Source code analysed with [DeepSource](https://deepsource.com/)
 1. Clone the repository
 
 ```bash
-git clone https://github.com/NY-Daystar/Gudenaa.git
+git clone https://github.com/NY-Daystar/aristeros.git
 ```
 
 2. Install dependencies
@@ -53,85 +53,9 @@ git clone https://github.com/NY-Daystar/Gudenaa.git
 npm install
 ```
 
-3. Setup configuration file
-
-```bash
-cp config.sample.json config.json
-```
-
-> See [Configuration](#configuration-for-get-links) to complete config.json file
-
-3. Execute cypress specs `get-links.cy.js`
-
-```bash
-npm run get-links
-```
-
-4. If normally executed you will get your file in the path configured in `config.json` file
-
-## Debug
-
-### Use Cypress UI
-
-If you encounter problems you can debug the script like this :
-
-1. run cypress UI
-
-```bash
-npm start
-```
-
-2. open E2E (end-to-end) specs
-   ![End-To-End](./screens/screen1.png)
-
-3. Select navigator among (Chrome, Edge, Firefox)
-   ![Navigator selection](./screens/screen2.png)
-4. Select the script you want to debug (ex: `get-links.cy.js`)
-   ![Script to debug](./screens/screen3.png)
-
-> Each change of the file will reload the cypress spec
-
-### Debug only one specification
-
-Example with spec file : `/cypress/e2e/ionos.cy.js`:
-
-```bash
-npm run spec --file=ionos
-```
-
-If you are on `Windows``
-
-```bash
-npm run spec:win --file=ionos
-```
-
-## Configuration for get-links
-
-This project needs several informations to be complete in `config.json` file
-
-Here's information needed:
-
--   `url`: The url to scrap data
--   `selector`: The selector css in the dom of `url` page to extract links
--   `limit` : number of elements `to fetch` with `selector`
--   `offset` : number of beggining elements `to skip` with `selector`
--   `filePath`: csv filepath (relative path) where store data (**DO NOT PUT ABSOLUTE PATH**)
-
-Exemple:
-
-```json
-{
-	"url": "https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)",
-	"selector": ".mw-content-ltr.mw-parser-output > ul > li > a",
-	"offset": "0",
-	"limit": "0",
-	"filePath": "results/peaky-blinder-characters.csv"
-}
-```
-
 ## For developpers
 
-If you want to contribute and add new scripts, you need to place it at `cypress/e2e` folder
+TODO
 
 ## Formatting
 
